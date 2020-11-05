@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#E8F6F8"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:background="#0465B3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_baseline_menu_24"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <SearchView
+            android:background="#fff"
+            android:layout_width="270dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:background="@drawable/ic_baseline_person_add_24"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <GridView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="530dp" >
+    </GridView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="#fff"
+        app:itemTextColor="#fff"
+        app:menu="@menu/nav_menu"/>
+
+</LinearLayout>
